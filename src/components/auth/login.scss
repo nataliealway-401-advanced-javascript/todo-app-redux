@@ -1,0 +1,13 @@
+.login {
+  background-color: grey;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.login input {
+  padding: 5px;
+  margin: 5px;
+}
