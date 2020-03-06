@@ -1,5 +1,5 @@
 import React from "react";
-import { LoginContext } from "./context";
+import { LoginContext } from "./context.js";
 import superagent from "superagent";
 
 import "./login.scss";
@@ -30,6 +30,7 @@ class Login extends React.Component {
       .auth(this.state.username, this.state.password)
       .set("mode", "cors")
       .then(response => {
+        console.log(response.text);
         let token = response.text;
         this.context.login(token);
       })
@@ -38,13 +39,15 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className="login">
+      <>
         {/* use the If component and conditionally render the login prpmpts */}
         <If condition={this.context.loggedIn}>
-          <button onClick={this.context.logout}>Log Out </button>
+          <button id="loginButton" onClick={this.context.logout}>
+            Log Out{" "}
+          </button>
         </If>
         <If condition={!this.context.loggedIn}>
-          <form onSubmit={this.handleSubmit}>
+          <form className="login" onSubmit={this.handleSubmit}>
             <input
               placeholder="username"
               name="username"
@@ -58,7 +61,7 @@ class Login extends React.Component {
             <input type="submit" value="login" />
           </form>
         </If>
-      </div>
+      </>
     );
   }
 }

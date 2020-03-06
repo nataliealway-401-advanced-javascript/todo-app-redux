@@ -1,4 +1,4 @@
-import { callAPI } from "../../lib/api";
+import { callAPI } from "../../lib/api.js";
 
 let todoAPI = "https://api-js401.herokuapp.com/api/v1/todo";
 

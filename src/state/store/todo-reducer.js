@@ -4,8 +4,8 @@ const initialState = {
       _id: 1,
       difficulty: 4,
       complete: false,
-      text: "Mow Lawn",
-      assignee: "Trevor",
+      text: "Buy groceries",
+      assignee: "Natalie",
       due: "2020-08-20"
     }
   ],
