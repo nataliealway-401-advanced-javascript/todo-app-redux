@@ -9,6 +9,4 @@
 [Deployment]() <br>
 
 **CodeSandbox:** <br>
-[ToDo App]() <br>
-
-## UML:
+[ToDo App](https://codesandbox.io/s/todo-redux-z9ujp) <br>
