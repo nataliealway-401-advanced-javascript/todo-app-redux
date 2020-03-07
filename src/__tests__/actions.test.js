@@ -4,7 +4,7 @@ import * as actions from "../state/store/todo-action.js";
 
 
 const mockStore = configMockStore([thunk]);
-
+// Credit Travis Skyles for tests
 describe("Normal Action Creators", () => {
   it("should create a GET action", () => {
     const store = mockStore({ results: [] });

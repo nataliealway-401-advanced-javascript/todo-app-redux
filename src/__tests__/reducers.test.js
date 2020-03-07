@@ -1,7 +1,7 @@
 import reducer from "../state/store/todo-reducer.js";
 
-describe("Our Reducer", () => {
-  it("does a GET right", () => {
+describe("Reducer Testing", () => {
+  it("performs a GET request succesfully", () => {
     let initialState = {};
     let action = {
       type: "GET",
@@ -10,7 +10,7 @@ describe("Our Reducer", () => {
     expect(reducer(initialState, action)).toEqual({ todoList: action.payload });
   });
 
-  it("does a POST right", () => {
+  it("performs a POST request succesfully", () => {
     let initialState = { todoList: "" };
     let action = {
       type: "POST",
@@ -21,7 +21,7 @@ describe("Our Reducer", () => {
     });
   });
 
-  it("does a DELETE right", () => {
+  it("performs a DELETE request succesfully", () => {
     let initialState = {
       todoList: [
         {
@@ -29,8 +29,8 @@ describe("Our Reducer", () => {
           difficulty: 4,
           complete: false,
           text: "Homework",
-          assignee: "Travis",
-          due: "2020-08-20"
+          assignee: "Natalie",
+          due: "2020-03-08"
         }
       ]
     };
@@ -41,8 +41,8 @@ describe("Our Reducer", () => {
         difficulty: 4,
         complete: false,
         text: "Homework",
-        assignee: "Travis",
-        due: "2020-08-20"
+          assignee: "Natalie",
+          due: "2020-03-08"
       }
     };
     expect(reducer(initialState, action)).toEqual({
@@ -58,8 +58,8 @@ describe("Our Reducer", () => {
           difficulty: 4,
           complete: false,
           text: "Homework",
-          assignee: "Travis",
-          due: "2020-08-20"
+          assignee: "Natalie",
+          due: "2020-03-08"
         }
       ]
     };
@@ -70,8 +70,8 @@ describe("Our Reducer", () => {
         difficulty: 4,
         complete: false,
         text: "Homework",
-        assignee: "Travis",
-        due: "2020-08-20"
+        assignee: "Natalie",
+        due: "2020-03-08"
       }
     };
     expect(reducer(initialState, action)).toEqual({

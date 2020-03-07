@@ -4,9 +4,11 @@
 
 ## Links and Resources
 [Submission PR](https://github.com/nataliealway-401-advanced-javascript/lab-37-dynamic-forms/pull/1) <br>
-<br>
-[Travis CI]()
-[Docs]()
+[Travis CI]() <br>
+[Docs]() <br>
+[Deployment]() <br>
 
 **CodeSandbox:** <br>
 [ToDo App]() <br>
+
+## UML:
