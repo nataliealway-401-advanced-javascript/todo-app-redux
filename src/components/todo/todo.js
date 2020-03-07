@@ -3,7 +3,7 @@ import { When } from "../if";
 import TodoForm from "./form-json.js";
 import TodoList from "./list.js";
 import TodoItem from "./item.js";
-import * as actions from "../../state/store/todo-action";
+import * as actions from "../../state/store/todo-action.js";
 
 import Auth from "../auth/auth";
 

@@ -1,4 +1,4 @@
-import { callAPI } from "../../lib/api.js";
+import { callAPI } from "../../lib/api";
 
 let todoAPI = "https://api-js401.herokuapp.com/api/v1/todo";
 
@@ -30,7 +30,9 @@ export const details = payload => {
 };
 
 export const postData = payload => dispatch => {
-  return callAPI(todoAPI, "POST", payload).then(result => dispatch(result));
+  return callAPI(todoAPI, "POST", payload)
+    .then(result => dispatch(post(result)))
+    .catch(console.error);
 };
 
 export const post = payload => {

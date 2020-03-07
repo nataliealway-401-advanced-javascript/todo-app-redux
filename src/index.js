@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 
 import SettingsContext from "./context/settings.js";
-import LoginContext from "./components/auth/context";
-import createStore from "../src/state/store";
+import LoginContext from "./components/auth/context.js";
+import createStore from "../src/state/store/index.js";
 import App from "./app.js";
 const store = createStore();
 

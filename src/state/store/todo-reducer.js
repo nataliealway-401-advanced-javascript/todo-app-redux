@@ -4,9 +4,9 @@ const initialState = {
       _id: 1,
       difficulty: 4,
       complete: false,
-      text: "Buy groceries",
+      text: "Do dishes",
       assignee: "Natalie",
-      due: "2020-08-20"
+      due: "2020-03-17"
     }
   ],
   showDetails: null,
