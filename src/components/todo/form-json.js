@@ -2,14 +2,6 @@ import React from "react";
 import useForm from "../../hooks/form.js";
 import { Field, reduxForm } from "redux-form";
 
-import Schema from "../../schema.json";
-import Form from "react-jsonschema-form";
-const schema = Schema;
-
-const uiSchema = {
-  _id: { "ui:widget": "hidden" },
-  __v: { "ui:widget": "hidden" }
-};
 
 const TodoForm = props => {
   const { handleChange, handleSubmit } = useForm(props.handleSubmit);
@@ -17,7 +9,6 @@ const TodoForm = props => {
   return (
     <>
       <h3>Add Item</h3>
-      {/* <Form schema={schema} uiSchema={uiSchema} onSubmit={handleSubmit} /> */}
       <form onChange={handleChange} onSubmit={handleSubmit}>
         <label>
           <span>To Do Item</span>
