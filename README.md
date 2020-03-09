@@ -11,5 +11,5 @@
 **CodeSandbox:** <br>
 [ToDo App](https://codesandbox.io/s/todo-redux-z9ujp) <br>
 
-#UML
+## Solution
 ![uml](./assets/uml.png)
